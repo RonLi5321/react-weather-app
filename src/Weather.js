@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate.js";
 import axios from "axios";
 import  "./Weather.css";
 
 
-export default function Weather() {
+
+export default function Weather(props) {
     const[weatherData, setWeatherData] = useState({ready: false});
     function handleResponse(response){
     setWeatherData({
         ready: true,
 temperature: response.data.main.temp,
 humidity:  response.data.main.humidity,
+date: new Date(response.data.dt * 1000),
 description: response.data.weather[0].description,
 wind: response.data.wind.speed,
 city: response.data.name
@@ -36,7 +39,7 @@ if (weatherData.ready) {
               <h1>San Francisco</h1>
               <div>
                 <ul>
-                  <li>Last Updated: Thursday at 18:00</li>
+                <FormattedDate date={weatherData.date}/>
                   <li>Sunny</li>
                 </ul>
               </div>
@@ -48,7 +51,7 @@ if (weatherData.ready) {
                   <span className="c-temp">°C</span>
                   <ul>
                     <li>Humidity: {weatherData.humidity} </li>
-                    <li>Wind: {Math.round(weatherData.wind)} </li>
+                    <li>Wind: {weatherData.wind} </li>
                   </ul>
                 </div>
                 <div className="col-6">
@@ -66,8 +69,7 @@ if (weatherData.ready) {
     } else {
 
     const apiKey = "57b2c40fdae71a6ba41d72685e3226e2";
-    let city = "San Francisco"
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
     return "Loading . ."
     }
