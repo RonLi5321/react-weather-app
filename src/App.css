@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/556/original/wallpaperflare.com_wallpaper_%281%29.jpg?1690669810);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/560/original/6863135.jpg?1690670059);
   background-size: cover;
 }
 
@@ -19,12 +19,14 @@ h2 {
 }
 ul {
   text-align: center;
+  list-style: none;
 }
 .c-temp {
   display: block;
   text-align: center;
 }
 .container {
+  background: blanchedalmond;
   margin-top: 200px;
   max-width: 600px;
   max-height: 100%;
@@ -35,10 +37,14 @@ ul {
   display: block;
   text-align: center;
 }
+.footer{
+  position: absolute bottom 0;
+}
 .search-form {
   display: block;
   padding: 20px;
   margin-left: 10px;
+  margin-top: 20px;
   margin-bottom: 0 auto;
   margin-right: 0 auto;
   text-align: center;
