@@ -22,7 +22,7 @@ city: response.data.name
 }
 
 function search(){
-    const apiKey = "57b2c40fdae71a6ba41d72685e3226e2";
+    const apiKey = "b0b9a67412cc5694fd13908f533da803";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 }
