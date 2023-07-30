@@ -1,3 +1,7 @@
+a{
+  color: cornflowerblue;
+  list-style: none;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -21,6 +25,10 @@ ul {
   text-align: center;
   list-style: none;
 }
+footer{
+  color: cornflowerblue;
+  margin-top: auto;
+}
 .c-temp {
   display: block;
   text-align: center;
@@ -36,9 +44,6 @@ ul {
 .f-temp {
   display: block;
   text-align: center;
-}
-.footer{
-  position: absolute bottom 0;
 }
 .search-form {
   display: block;
