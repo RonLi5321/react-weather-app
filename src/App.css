@@ -2,6 +2,9 @@ a{
   color: cornflowerblue;
   list-style: none;
 }
+button{
+  background-image: linear-gradient( 135deg, #F6D242 10%, #FF52E5 100%);
+}
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -34,12 +37,14 @@ footer{
   text-align: center;
 }
 .container {
-  background: blanchedalmond;
+  border: 5px outset #885df1;
+border-radius: 20px;
+  background: aliceblue;
   margin-top: 200px;
   max-width: 600px;
   max-height: 100%;
   padding: 40px 20px;
-  opacity: 70%;
+  opacity: 75%;
 }
 .f-temp {
   display: block;
