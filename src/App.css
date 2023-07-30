@@ -63,8 +63,10 @@ footer{
   display: block;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
   body{
-    background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/559/original/2102.i518.009_sky_cloud_evening_illustration.jpg?1690670048);
+
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/569/original/Green_Blue_Illustration_Green_Hill_Phone_Wallpapaer_%281%29.png?1690677393);
+    background-size: cover;
   }
 }
