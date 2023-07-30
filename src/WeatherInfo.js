@@ -8,13 +8,20 @@ export default function WeatherInfo(props){
     <div className="WeatherInfo">
          <h1>{props.data.city}</h1>
               <div>
+                <div class="row">
+                <div class="col-3">
                 <ul>
-                <FormattedDate date={props.data.date}/>
+                <FormattedDate date={props.data.date}/> 
                   <li class="description">{props.data.description}</li>
                 </ul>
               </div>
               <div>
-                <WeatherIcon code={props.data.icon}/>
+              <div class="row">
+                <div class="col-3">
+                <WeatherIcon code={props.data.icon}/></div>
+                </div>
+                <div class="row">
+                <div class="col-3">
                 <WeatherTemperature fahrenheit={props.data.temperature}/>
                   <ul>
                     <li>Humidity: {props.data.humidity} </li>
@@ -22,5 +29,8 @@ export default function WeatherInfo(props){
                   </ul>
             </div>
             </div>
+            </div></div>
+            </div>
+    </div>
             );
 }
