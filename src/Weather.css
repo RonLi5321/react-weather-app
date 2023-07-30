@@ -22,3 +22,6 @@
     display: block;
     text-align: center;
 }
+.WeatherTemperature{
+    font-size: 40px;
+}
