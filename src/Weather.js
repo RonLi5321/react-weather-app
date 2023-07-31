@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import axios from "axios";
 import  "./Weather.css";
 
@@ -22,7 +23,7 @@ city: response.data.name
 }
 
 function search(){
-    const apiKey = "b0b9a67412cc5694fd13908f533da803";
+    const apiKey = `e947cb2640f1db92e6a19005bc43b435`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 }
@@ -51,6 +52,7 @@ if (weatherData.ready) {
   </div>
           </form>
           <WeatherInfo data={weatherData}/>
+          <WeatherForecast/>
           </div>
           );
     } else {
