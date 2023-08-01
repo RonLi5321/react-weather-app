@@ -1,5 +1,5 @@
 a{
-  color: cornflowerblue;
+  color: salmon;
   list-style: none;
 }
 button{
@@ -32,7 +32,7 @@ ul {
   list-style: none;
 }
 footer{
-  color: cornflowerblue;
+  color: white;
   margin-top: auto;
 }
 .c-temp {
