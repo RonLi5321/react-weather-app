@@ -17,7 +17,7 @@ button{
 
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/560/original/6863135.jpg?1690670059);
-  background-size: cover;
+  background-size: stretch;
   background-repeat: no-repeat;
 }
 
