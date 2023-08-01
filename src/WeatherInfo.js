@@ -6,12 +6,14 @@ import WeatherTemperature from "./WeatherTemperature.js"
 export default function WeatherInfo(props){
     return ( 
     <div className="WeatherInfo">
-         <h1>{props.data.city}</h1>
+         
          <div>
+            <h1>{props.data.city}</h1>
                 <div class="row">
                 <div class="col-4">
                 <ul>
                     <li>
+                        
                 <FormattedDate date={props.data.date}/> </li>
                   <li class="description">{props.data.description}</li>
                </ul>

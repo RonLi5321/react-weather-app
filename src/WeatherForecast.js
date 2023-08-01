@@ -25,7 +25,11 @@ let [forecast, setForecast] = useState(null);
             if (index < 5) {
               return (
                 <div className="col" key={index}>
+                    <div className="card-deck">
+                        <div className="card"> 
                   <WeatherForecastDay data={dailyForecast} />
+                </div>
+                </div>
                 </div>
                 );
               } else{
