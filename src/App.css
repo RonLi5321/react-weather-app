@@ -10,6 +10,9 @@ button{
   text-align: center;
   margin: 0 auto;
 }
+.attribute, .git-hub, .profile{
+  color: gainsboro;
+}
 
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/560/original/6863135.jpg?1690670059);
